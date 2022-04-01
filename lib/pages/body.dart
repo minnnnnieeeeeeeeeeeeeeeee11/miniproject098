@@ -56,7 +56,7 @@ class HomeBanner extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.only(top: 2),
             child: Image.asset(
-              'image/food1.png',
+              'image/13.png',
             ),
           ),
           Expanded(
@@ -64,17 +64,24 @@ class HomeBanner extends StatelessWidget {
               padding: const EdgeInsets.symmetric(vertical: 30),
               child: Column(
                 children: [
-                  Text(
-                    "let's cook",
-                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 22),
+                  Padding(
+                    padding: EdgeInsets.only(right: 15),
+                    child: const Text(
+                      "let's cook",
+                      style:
+                          TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
+                    ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 15,
                   ),
-                  Text(
-                    'ถ้าจิตใจห่อเหี่ยว อาหารจะเยียวยาเราได้',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(fontSize: 16, color: Colors.black54),
+                  const Padding(
+                    padding: EdgeInsets.only(right: 22),
+                    child: Text(
+                      'ถ้าจิตใจห่อเหี่ยว ให้อาหารจะเยียวยา',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(fontSize: 17, color: Colors.black54),
+                    ),
                   ),
                 ],
               ),

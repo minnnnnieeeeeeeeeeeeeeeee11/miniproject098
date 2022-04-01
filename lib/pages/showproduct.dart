@@ -71,7 +71,9 @@ class _ShowProductPageState extends State<ShowProductPage> {
               ),
             ).then((value) => setState(() {}));
           },
-          child: const Icon(Icons.add),
+          child: const Icon(
+            Icons.add,
+          ),
         ),
       ),
     );
@@ -109,7 +111,7 @@ class _ShowProductPageState extends State<ShowProductPage> {
                     trailing: IconButton(
                       onPressed: () {
                         var alertDialog = AlertDialog(
-                          title: const Text('ยืนยันการลบข้อมูลเมนุ'),
+                          title: const Text('ยืนยันการลบข้อมูลเมนู'),
                           content: Text(
                               'คุณต้องการลบเมนู ${data['product_name']} ใช่หรือไม่'),
                           actions: [
@@ -149,17 +151,6 @@ class _ShowProductPageState extends State<ShowProductPage> {
           ),
         );
       },
-    );
-  }
-
-  Container txt() {
-    return Container(
-      margin: const EdgeInsets.symmetric(vertical: 20),
-      alignment: Alignment.center,
-      child: const Text(
-        'Products list',
-        style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
-      ),
     );
   }
 }

@@ -30,10 +30,6 @@ class _AddProductPageState extends State<AddProductPage> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      // decoration: const BoxDecoration(
-      //   image: DecorationImage(
-      //       image: AssetImage('image/3.jpg'), fit: BoxFit.cover),
-      // ),
       child: Scaffold(
         backgroundColor: kBgColor,
         appBar: AppBar(
@@ -72,7 +68,7 @@ class _AddProductPageState extends State<AddProductPage> {
                     style: const TextStyle(color: Colors.black),
                     decoration: InputDecoration(
                       label: Text(
-                        'Product name',
+                        'ชื่อเมนู',
                         style: TextStyle(
                             fontSize: 20, color: Colors.grey.shade700),
                       ),
@@ -99,7 +95,7 @@ class _AddProductPageState extends State<AddProductPage> {
                     style: const TextStyle(color: Colors.black),
                     decoration: InputDecoration(
                       label: Text(
-                        'Price',
+                        'วัตถุดิบ',
                         style: TextStyle(
                             fontSize: 20, color: Colors.grey.shade700),
                       ),
@@ -128,7 +124,7 @@ class _AddProductPageState extends State<AddProductPage> {
                     style: const TextStyle(color: Colors.black),
                     decoration: InputDecoration(
                       label: Text(
-                        'Product Type',
+                        'วิธีการทำ',
                         style: TextStyle(
                             fontSize: 20, color: Colors.grey.shade700),
                       ),

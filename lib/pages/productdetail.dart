@@ -98,7 +98,7 @@ class _ProductDetailState extends State<ProductDetail> {
                           const Text(
                             'วัตถุดิบในการทำ ',
                             style: TextStyle(
-                                fontSize: 20,
+                                fontSize: 22,
                                 color: Colors.black87,
                                 fontWeight: FontWeight.bold),
                           ),
@@ -106,13 +106,12 @@ class _ProductDetailState extends State<ProductDetail> {
                       ),
                       Column(
                         children: [
-                          Text(
-                            '${data['material']}',
-                            style: const TextStyle(
-                                height: 1.5,
-                                fontSize: 20,
-                                color: Colors.black54),
-                          ),
+                          Text('${data['material']}',
+                              style: const TextStyle(
+                                  height: 1.5,
+                                  fontSize: 20,
+                                  color: Colors.black54),
+                              textAlign: TextAlign.justify),
                         ],
                       ),
                       const SizedBox(height: 15),
@@ -122,7 +121,7 @@ class _ProductDetailState extends State<ProductDetail> {
                           Text(
                             'วิธีการทำ',
                             style: TextStyle(
-                                fontSize: 20,
+                                fontSize: 22,
                                 color: Colors.black87,
                                 fontWeight: FontWeight.bold),
                           ),
@@ -130,13 +129,12 @@ class _ProductDetailState extends State<ProductDetail> {
                       ),
                       Column(
                         children: [
-                          Text(
-                            '${data['product_make']}',
-                            style: const TextStyle(
-                                height: 1.5,
-                                fontSize: 20,
-                                color: Colors.black54),
-                          ),
+                          Text('${data['product_make']}',
+                              style: const TextStyle(
+                                  height: 1.5,
+                                  fontSize: 20,
+                                  color: Colors.black54),
+                              textAlign: TextAlign.justify),
                         ],
                       ),
                     ],

@@ -62,7 +62,7 @@ class _EditProductPageState extends State<EditProductPage> {
               snapshot.data!.data() as Map<String, dynamic>;
 
           _name.text = data['product_name'];
-          _material.text = data['material'].toString();
+          _material.text = data['material'];
           _make.text = data['product_make'];
 
           return SingleChildScrollView(
@@ -79,7 +79,7 @@ class _EditProductPageState extends State<EditProductPage> {
                           controller: _name,
                           decoration: InputDecoration(
                             label: Text(
-                              'menu name',
+                              'ชื่อเมนู',
                               style: TextStyle(
                                   fontSize: 20, color: Colors.grey.shade700),
                             ),
@@ -107,7 +107,7 @@ class _EditProductPageState extends State<EditProductPage> {
                           controller: _material,
                           decoration: InputDecoration(
                             label: Text(
-                              'material',
+                              'วัตถุดิบ',
                               style: TextStyle(
                                   fontSize: 20, color: Colors.grey.shade700),
                             ),
@@ -135,7 +135,7 @@ class _EditProductPageState extends State<EditProductPage> {
                           controller: _make,
                           decoration: InputDecoration(
                             label: Text(
-                              'product make',
+                              'วิธีการทำ',
                               style: TextStyle(
                                   fontSize: 20, color: Colors.grey.shade700),
                             ),

@@ -39,7 +39,7 @@ class _ShowProductUserState extends State<ShowProductUser> {
           // backgroundColor: Colors.transparent,
           // elevation: 0.0,
         ),
-        drawer: Drawer(),
+        // drawer: Drawer(),
         body: ListView(
           children: [
             Body(),
@@ -67,7 +67,7 @@ class _ShowProductUserState extends State<ShowProductUser> {
                     borderRadius: BorderRadius.circular(25),
                   ),
                   child: ListTile(
-                    leading: Image.asset('image/food.png'),
+                    leading: Image.asset('image/14.png'),
                     trailing: Icon(Icons.arrow_forward_ios_rounded),
                     onTap: () {
                       Navigator.push(
@@ -82,7 +82,7 @@ class _ShowProductUserState extends State<ShowProductUser> {
                       style: const TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.w600,
-                          color: Color.fromARGB(255, 236, 114, 155)),
+                          color: Colors.orange),
                     ),
                     subtitle: Text("ดูวิธีการทำกันเลย"),
                   ),
@@ -97,17 +97,6 @@ class _ShowProductUserState extends State<ShowProductUser> {
           ),
         );
       },
-    );
-  }
-
-  Container txt() {
-    return Container(
-      margin: const EdgeInsets.symmetric(vertical: 20),
-      alignment: Alignment.center,
-      child: const Text(
-        'Products list',
-        style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
-      ),
     );
   }
 }
